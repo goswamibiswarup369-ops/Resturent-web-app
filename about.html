@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+clean_about_html = """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,85 +18,218 @@
                 <li><a href="services.html">Menu</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="hamburger" aria-label="Toggle menu" tabindex="0">☰</div>
+            <div class="hamburger" aria-label="Toggle menu" tabindex="0" role="button">☰</div>
         </nav>
     </header>
 
     <main>
-        <!-- Hero section with clear founding year -->
-        <section class="hero" style="padding:6rem 2rem; background-image: url('images/about-bg.webp');">
+        <section class="hero" style="padding:8rem 2rem; background-image:url('images/about-bg.webp');">
             <h1>Our Story</h1>
-            <p>Spice Haven opened its doors in 2026 with one simple dream: bring authentic Indian home‑style flavors to Dhatrigram.</p>
+            <p>From a family kitchen filled with love to Dhatrigram's favorite Indian restaurant</p>
         </section>
 
-        <!-- About content section -->
-        <section style="padding:4rem 2rem; max-width:1000px; margin:auto;">
-            <h2 style="text-align:center; margin-bottom:2rem;">From Home Kitchen to Haven</h2>
-            <p style="margin-bottom:1.5rem; text-align:justify;">
-                Spice Haven began as a family kitchen filled with the aromas of freshly roasted spices, slow-cooked curries, 
-                and recipes passed down through generations. In early 2026, we transformed that passion into a warm neighborhood 
-                restaurant where every guest is treated like family.
-            </p>
-            <p style="margin-bottom:1.5rem; text-align:justify;">
-                Our menu celebrates the richness of Indian cuisine—from smoky tandoori starters and creamy butter chicken 
-                to vibrant vegetarian curries and fragrant biriyanis. We grind our own masalas in small batches, use seasonal 
-                ingredients from local markets, and prepare each dish to order so you always get the freshest flavor on your plate.
-            </p>
-
-            <h2 style="text-align:center; margin:2.5rem 0 1.5rem;">Our Mission & Values</h2>
-            <ul style="list-style: none; padding:0; margin:0 0 2rem 0;">
-                <li style="margin-bottom:1rem;">
-                    <strong>Authentic taste:</strong> We stay true to traditional Indian recipes while adding modern plating and presentation.
-                </li>
-                <li style="margin-bottom:1rem;">
-                    <strong>Warm hospitality:</strong> From your first step inside, our team is here to greet you with a smile 
-                    and make every visit feel like a celebration.
-                </li>
-                <li style="margin-bottom:1rem;">
-                    <strong>Fresh & local:</strong> We carefully select ingredients from local vendors in and around Dhatrigram 
-                    to support our community and keep flavors vibrant.
-                </li>
-                <li style="margin-bottom:1rem;">
-                    <strong>Comfortable space:</strong> Our colorful, cozy interiors are designed to be the perfect spot for 
-                    family dinners, friendly gatherings, or a peaceful solo meal.
-                </li>
-            </ul>
-
-            <h2 style="text-align:center; margin:2.5rem 0 1.5rem;">Meet the Team</h2>
-            <div style="display:grid; grid-template-columns:1fr; gap:1.5rem;">
-                <div style="background:white; border-radius:16px; padding:1.5rem; box-shadow:0 8px 30px rgba(0,0,0,0.05);">
-                    <h3>Chef Arjun</h3>
-                    <p style="margin-top:0.5rem; text-align:justify;">
-                        With over 10 years of experience in Indian kitchens, Arjun leads our menu development and ensures every 
-                        dish balances flavor, aroma, and presentation perfectly.
-                    </p>
+        <section style="padding:4rem 2rem; background:linear-gradient(135deg, #f8f9fa, #e9ecef);">
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:2rem; max-width:1200px; margin:auto;">
+                <div style="background:linear-gradient(135deg, #ff6b35, #f7931e); color:white; padding:2rem; border-radius:20px; text-align:center;">
+                    <div style="font-size:3rem; font-weight:700; margin-bottom:0.5rem;">2026</div>
+                    <div style="font-size:1.1rem;">Year Established</div>
                 </div>
-                <div style="background:white; border-radius:16px; padding:1.5rem; box-shadow:0 8px 30px rgba(0,0,0,0.05);">
-                    <h3>Host Ananya</h3>
-                    <p style="margin-top:0.5rem; text-align:justify;">
-                        Ananya makes sure your time at Spice Haven feels relaxed and enjoyable—from helping with reservations 
-                        to recommending the perfect dish for your mood.
-                    </p>
+                <div style="background:linear-gradient(135deg, #00d4aa, #00b894); color:white; padding:2rem; border-radius:20px; text-align:center;">
+                    <div style="font-size:3rem; font-weight:700; margin-bottom:0.5rem;">500+</div>
+                    <div style="font-size:1.1rem;">Happy Customers</div>
+                </div>
+                <div style="background:linear-gradient(135deg, #ffd700, #f7931e); color:white; padding:2rem; border-radius:20px; text-align:center;">
+                    <div style="font-size:3rem; font-weight:700; margin-bottom:0.5rem;">50+</div>
+                    <div style="font-size:1.1rem;">Menu Items</div>
+                </div>
+                <div style="background:linear-gradient(135deg, #2c3e50, #34495e); color:white; padding:2rem; border-radius:20px; text-align:center;">
+                    <div style="font-size:3rem; font-weight:700; margin-bottom:0.5rem;">10+</div>
+                    <div style="font-size:1.1rem;">Years Experience</div>
                 </div>
             </div>
+        </section>
 
-            <h2 style="text-align:center; margin:2.5rem 0 1.5rem;">Visit Us</h2>
-            <p style="text-align:center; margin-bottom:0.5rem;">
-                📍 Dhatrigram, West Bengal, India
-            </p>
-            <p style="text-align:center; margin-bottom:0.5rem;">
-                ⏱️ Open since 2026 – serving lunch and dinner all week.
-            </p>
-            <p style="text-align:center;">
-                Ready to taste the difference? <a href="contact.html">Reserve your table</a> or drop in and say hello.
-            </p>
+        <section style="padding:5rem 2rem; max-width:1000px; margin:auto;">
+            <h2 style="text-align:center; font-size:3rem; color:#2c3e50; margin-bottom:1rem;">From Home Kitchen to Haven</h2>
+            <div style="width:100px; height:4px; background:linear-gradient(90deg, #ff6b35, #00d4aa); margin:0 auto 3rem; border-radius:10px;"></div>
+            
+            <div style="background:white; padding:3rem; border-radius:25px; box-shadow:0 15px 50px rgba(0,0,0,0.08); margin-bottom:3rem;">
+                <p style="font-size:1.15rem; line-height:2; margin-bottom:1.5rem; text-align:justify; color:#555;">
+                    Spice Haven began as a family kitchen filled with the aromas of freshly roasted spices, slow-cooked curries, 
+                    and recipes passed down through generations. In early 2026, we transformed that passion into a warm neighborhood 
+                    restaurant where every guest is treated like family.
+                </p>
+                <p style="font-size:1.15rem; line-height:2; text-align:justify; color:#555;">
+                    Our menu celebrates the richness of Indian cuisine—from smoky tandoori starters and creamy butter chicken 
+                    to vibrant vegetarian curries and fragrant biriyanis. We grind our own masalas in small batches, use seasonal 
+                    ingredients from local markets, and prepare each dish to order so you always get the freshest flavor on your plate.
+                </p>
+            </div>
+
+            <h2 style="text-align:center; font-size:2.5rem; color:#2c3e50; margin-bottom:1rem;">Our Journey</h2>
+            <div style="width:100px; height:4px; background:linear-gradient(90deg, #ff6b35, #00d4aa); margin:0 auto 3rem; border-radius:10px;"></div>
+            
+            <div style="max-width:800px; margin:auto;">
+                <div style="background:white; padding:2rem; border-radius:20px; box-shadow:0 10px 40px rgba(0,0,0,0.1); margin-bottom:2rem; border-left:5px solid #ff6b35;">
+                    <h3 style="color:#ff6b35; margin-bottom:0.5rem;">🏠 2015 - The Beginning</h3>
+                    <p style="color:#666; line-height:1.8;">Started cooking authentic Indian recipes in our family kitchen, sharing meals with friends and neighbors.</p>
+                </div>
+                
+                <div style="background:white; padding:2rem; border-radius:20px; box-shadow:0 10px 40px rgba(0,0,0,0.1); margin-bottom:2rem; border-left:5px solid #00d4aa;">
+                    <h3 style="color:#00d4aa; margin-bottom:0.5rem;">💡 2025 - The Dream</h3>
+                    <p style="color:#666; line-height:1.8;">Decided to bring our home-style flavors to the community with a cozy restaurant concept.</p>
+                </div>
+                
+                <div style="background:white; padding:2rem; border-radius:20px; box-shadow:0 10px 40px rgba(0,0,0,0.1); margin-bottom:2rem; border-left:5px solid #ff6b35;">
+                    <h3 style="color:#ff6b35; margin-bottom:0.5rem;">🎉 2026 - Grand Opening</h3>
+                    <p style="color:#666; line-height:1.8;">Spice Haven officially opened in Dhatrigram, welcoming guests with authentic Indian cuisine and warm hospitality.</p>
+                </div>
+                
+                <div style="background:white; padding:2rem; border-radius:20px; box-shadow:0 10px 40px rgba(0,0,0,0.1); margin-bottom:2rem; border-left:5px solid #00d4aa;">
+                    <h3 style="color:#00d4aa; margin-bottom:0.5rem;">🌟 Today - Growing Together</h3>
+                    <p style="color:#666; line-height:1.8;">Serving hundreds of happy customers every month and becoming Dhatrigram's favorite Indian restaurant.</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding:5rem 2rem; background:linear-gradient(135deg, #f8f9fa, #e9ecef);">
+            <div style="max-width:1000px; margin:auto;">
+                <h2 style="text-align:center; font-size:3rem; color:#2c3e50; margin-bottom:1rem;">Our Mission & Values</h2>
+                <div style="width:100px; height:4px; background:linear-gradient(90deg, #ff6b35, #00d4aa); margin:0 auto 3rem; border-radius:10px;"></div>
+
+                <div style="background:white; padding:2.5rem; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.08); border-left:5px solid #ff6b35; margin-bottom:1.5rem;">
+                    <div style="font-size:2.5rem; margin-bottom:1rem;">🍽️</div>
+                    <h3 style="color:#ff6b35; font-size:1.5rem; margin-bottom:0.5rem;">Authentic Taste</h3>
+                    <p style="color:#666; line-height:1.8;">We stay true to traditional Indian recipes while adding modern plating and presentation. Every dish tells a story of heritage and flavor.</p>
+                </div>
+
+                <div style="background:white; padding:2.5rem; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.08); border-left:5px solid #00d4aa; margin-bottom:1.5rem;">
+                    <div style="font-size:2.5rem; margin-bottom:1rem;">🤝</div>
+                    <h3 style="color:#00d4aa; font-size:1.5rem; margin-bottom:0.5rem;">Warm Hospitality</h3>
+                    <p style="color:#666; line-height:1.8;">From your first step inside, our team is here to greet you with a smile and make every visit feel like a celebration with family.</p>
+                </div>
+
+                <div style="background:white; padding:2.5rem; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.08); border-left:5px solid #ff6b35; margin-bottom:1.5rem;">
+                    <div style="font-size:2.5rem; margin-bottom:1rem;">🌱</div>
+                    <h3 style="color:#ff6b35; font-size:1.5rem; margin-bottom:0.5rem;">Fresh & Local</h3>
+                    <p style="color:#666; line-height:1.8;">We carefully select ingredients from local vendors in and around Dhatrigram to support our community and keep flavors vibrant.</p>
+                </div>
+
+                <div style="background:white; padding:2.5rem; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.08); border-left:5px solid #00d4aa; margin-bottom:1.5rem;">
+                    <div style="font-size:2.5rem; margin-bottom:1rem;">🏡</div>
+                    <h3 style="color:#00d4aa; font-size:1.5rem; margin-bottom:0.5rem;">Comfortable Space</h3>
+                    <p style="color:#666; line-height:1.8;">Our colorful, cozy interiors are designed to be the perfect spot for family dinners, friendly gatherings, or a peaceful solo meal.</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding:5rem 2rem; background:white;">
+            <div style="max-width:1200px; margin:auto;">
+                <h2 style="text-align:center; font-size:3rem; color:#2c3e50; margin-bottom:1rem;">Meet Our Team</h2>
+                <div style="width:100px; height:4px; background:linear-gradient(90deg, #ff6b35, #00d4aa); margin:0 auto 1rem; border-radius:10px;"></div>
+                <p style="text-align:center; color:#666; margin-bottom:3rem; font-size:1.1rem;">The passionate people behind your favorite dishes</p>
+
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:3rem;">
+                    <div style="background:white; border-radius:25px; box-shadow:0 15px 50px rgba(0,0,0,0.1); overflow:hidden; border-top:5px solid #ff6b35;">
+                        <div style="text-align:center; padding:2.5rem;">
+                            <div style="font-size:6rem; margin-bottom:1rem;">👨‍🍳</div>
+                            <h3 style="color:#ff6b35; font-size:1.8rem; margin-bottom:0.5rem;">Chef Arjun</h3>
+                            <p style="color:#ffd700; font-weight:600; margin-bottom:1rem; font-size:1.05rem;">Head Chef & Menu Developer</p>
+                            <p style="color:#666; line-height:1.8; text-align:justify;">
+                                With over 10 years of experience in Indian kitchens across the country, Arjun leads our menu development 
+                                and ensures every dish balances flavor, aroma, and presentation perfectly. His passion for authentic 
+                                spices and traditional cooking techniques shines through in every plate.
+                            </p>
+                            <div style="margin-top:1.5rem; padding-top:1.5rem; border-top:2px solid #f0f0f0;">
+                                <span style="font-weight:600; color:#ff6b35;">Specialty:</span>
+                                <span style="color:#666;"> Tandoori & Curry Mastery</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background:white; border-radius:25px; box-shadow:0 15px 50px rgba(0,0,0,0.1); overflow:hidden; border-top:5px solid #00d4aa;">
+                        <div style="text-align:center; padding:2.5rem;">
+                            <div style="font-size:6rem; margin-bottom:1rem;">👩‍💼</div>
+                            <h3 style="color:#00d4aa; font-size:1.8rem; margin-bottom:0.5rem;">Ananya</h3>
+                            <p style="color:#ffd700; font-weight:600; margin-bottom:1rem; font-size:1.05rem;">Restaurant Manager & Host</p>
+                            <p style="color:#666; line-height:1.8; text-align:justify;">
+                                Ananya makes sure your time at Spice Haven feels relaxed and enjoyable—from helping with reservations 
+                                to recommending the perfect dish for your mood. Her warm smile and attention to detail ensure every 
+                                guest leaves with a memorable experience.
+                            </p>
+                            <div style="margin-top:1.5rem; padding-top:1.5rem; border-top:2px solid #f0f0f0;">
+                                <span style="font-weight:600; color:#00d4aa;">Specialty:</span>
+                                <span style="color:#666;"> Guest Experience & Service</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background:white; border-radius:25px; box-shadow:0 15px 50px rgba(0,0,0,0.1); overflow:hidden; border-top:5px solid #ff6b35;">
+                        <div style="text-align:center; padding:2.5rem;">
+                            <div style="font-size:6rem; margin-bottom:1rem;">👨‍🍳</div>
+                            <h3 style="color:#ff6b35; font-size:1.8rem; margin-bottom:0.5rem;">Rajesh</h3>
+                            <p style="color:#ffd700; font-weight:600; margin-bottom:1rem; font-size:1.05rem;">Sous Chef & Spice Expert</p>
+                            <p style="color:#666; line-height:1.8; text-align:justify;">
+                                Rajesh is our spice master, personally grinding and blending our signature masalas. His deep knowledge 
+                                of regional Indian flavors brings authenticity to every dish. He works closely with local suppliers to 
+                                source the finest ingredients.
+                            </p>
+                            <div style="margin-top:1.5rem; padding-top:1.5rem; border-top:2px solid #f0f0f0;">
+                                <span style="font-weight:600; color:#ff6b35;">Specialty:</span>
+                                <span style="color:#666;"> Spice Blending & Biryani</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding:5rem 2rem; background:linear-gradient(135deg, #ff6b35, #f7931e); color:white; text-align:center;">
+            <h2 style="font-size:3rem; margin-bottom:1.5rem;">Visit Spice Haven</h2>
+            <div style="max-width:800px; margin:0 auto 2rem; background:rgba(255,255,255,0.15); padding:2.5rem; border-radius:20px;">
+                <p style="font-size:1.3rem; margin-bottom:1rem;">
+                    📍 <strong>Dhatrigram, West Bengal, India</strong>
+                </p>
+                <p style="font-size:1.3rem; margin-bottom:1rem;">
+                    🕐 <strong>11:00 AM - 11:00 PM (Daily)</strong>
+                </p>
+                <p style="font-size:1.3rem; margin-bottom:1rem;">
+                    📞 <strong>+91-123-456-7890</strong>
+                </p>
+                <p style="font-size:1.3rem;">
+                    📧 <strong>info@spicehaven.com</strong>
+                </p>
+            </div>
+            <a href="contact.html" class="cta" style="background:white; color:#ff6b35; font-size:1.2rem; padding:1.5rem 4rem;">Reserve Your Table Now</a>
         </section>
     </main>
 
     <footer role="contentinfo">
+        <div style="margin-bottom:1.5rem;">
+            <a href="#" style="color:white; font-size:2rem; margin:0 1rem;" aria-label="Facebook">📘</a>
+            <a href="#" style="color:white; font-size:2rem; margin:0 1rem;" aria-label="Instagram">📷</a>
+            <a href="#" style="color:white; font-size:2rem; margin:0 1rem;" aria-label="Twitter">🐦</a>
+        </div>
+        <p style="margin-bottom:0.5rem;">📞 +91-123-456-7890 | 📧 info@spicehaven.com</p>
         <p>&copy; 2026 Spice Haven. Dhatrigram, West Bengal. | Opened in 2026.</p>
     </footer>
 
     <script src="js/script.js"></script>
 </body>
-</html>
+</html>"""
+
+# Save the file
+with open('output/about.html', 'w', encoding='utf-8') as f:
+    f.write(clean_about_html)
+
+print("✅ Clean about.html created - ready for VS Code")
+print("\n📋 Includes:")
+print("   - Hero section with story")
+print("   - Stats section (2026, 500+ customers, 50+ items, 10+ years)")
+print("   - From Home Kitchen to Haven story")
+print("   - Journey timeline (2015-Today)")
+print("   - Mission & Values (4 cards)")
+print("   - Team section (3 members: Chef Arjun, Ananya, Rajesh)")
+print("   - Visit Us CTA section")
+print("   - Footer with social links")
+print("\n✨ Properly formatted and ready to paste into VS Code!")
